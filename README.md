@@ -42,8 +42,13 @@ TFGAN模型在量化指标及可视化上都优于TimeGAN，可视化对比如�
 
 没有低频处理模块作用的结果：
 <div align="center">
-  <img src="images/TFC_loss2.png" alt="点异常" width="500"  />
-  <img src="images/timeganloss1.png" alt="季节异常" width="500"  />
+  <img src="images/myplot.png" alt="点异常" width="500"  />
+  <img src="images/myplot2.png" alt="季节异常" width="500"  />
+</div>
+有低频处理模块作用的结果：
+<div align="center">
+  <img src="images/PCA_20240810_090934.png" alt="点异常" width="500"  />
+  <img src="images/t-SNE_20240810_090938" alt="季节异常" width="500"  />
 </div>
 
 
