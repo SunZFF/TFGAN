@@ -18,14 +18,24 @@ TFGAN 基于 TimeGAN 的外部框架，并有效捕捉原始数据的复杂时�
 
 注意：新的判别器框架为了应对有着明显长周期或长期趋势的数据集，额外设计了低频处理模块
 
-TFGAN模型在量化指标及可视化上都优于TimeGAN，可视化对比如下（数据集stock,都基于timeGAN的最优超参数）：
+TFGAN模型在量化指标及可视化上都优于TimeGAN，可视化对比如下（左侧为TFGAN，右侧为TimeGAN，stock数据集,都基于timeGAN的最优超参数）：
 <div align="center">
   <img src="images/PCA_stock.png" alt="点异常" width="500"  />
   <img src="images/PCA_stock0.png" alt="季节异常" width="500"  />
 </div>
 <div align="center">
-  <img src="images/t-SNE_stock.png" alt="点异常" width="500"  />
+  <img src="images/t_SNE_stock.png" alt="点异常" width="500"  />
   <img src="images/t-SNE_stock0.png" alt="季节异常" width="500"  />
+</div>
+
+且由于TFGAN一定程度上平衡了TimeGAN原模型GAN框架内生成器和判别器的性能，避免了模式奔溃，训练过程相对TimeGAN更加稳定（左侧为TFGAN，右侧为TimeGAN）
+<div align="center">
+  <img src="images/TFC_loss1.png" alt="点异常" width="500"  />
+  <img src="images/timeganloss1.png" alt="季节异常" width="500"  />
+</div>
+<div align="center">
+  <img src="images/TFC_loss2.png" alt="点异常" width="500"  />
+  <img src="images/timeganloss2.png" alt="季节异常" width="500"  />
 </div>
 
 
