@@ -31,11 +31,19 @@ TFGAN模型在量化指标及可视化上都优于TimeGAN，可视化对比如�
 且由于TFGAN一定程度上平衡了TimeGAN原模型GAN框架内生成器和判别器的性能，避免了模式奔溃，训练过程相对TimeGAN更加稳定（左侧为TFGAN，右侧为TimeGAN）
 <div align="center">
   <img src="images/TFC_loss1.png" alt="点异常" width="500"  />
-  <img src="images/timeganloss1.png" alt="季节异常" width="500"  />
+  <img src="images/timeganloss2.png" alt="季节异常" width="500"  />
 </div>
 <div align="center">
   <img src="images/TFC_loss2.png" alt="点异常" width="500"  />
-  <img src="images/timeganloss2.png" alt="季节异常" width="500"  />
+  <img src="images/timeganloss1.png" alt="季节异常" width="500"  />
+</div>
+
+另外，通过额外设计的sine数据集(六维，周期240，每个维度频率随机)，验证了低频处理模块的有效性（seq_len参数设置为24，低频处理模块步长resampled_interval参数设置为10）
+
+没有低频处理模块作用的结果：
+<div align="center">
+  <img src="images/TFC_loss2.png" alt="点异常" width="500"  />
+  <img src="images/timeganloss1.png" alt="季节异常" width="500"  />
 </div>
 
 
