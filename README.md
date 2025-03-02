@@ -6,7 +6,9 @@ TFGAN 基于 TimeGAN 的外部框架，并有效捕捉原始数据的复杂时�
 
 通常只依赖时间域和频域数据的模型会存在点异常和季节异常问题
 
-![点异常](images/点异常.png) ![季节异常](images/季节异常.png)
 <div align="center">
-  <img src="images/点异常.png" alt="点异常" width="200" height="100" />
+  <img src="images/点异常.png" alt="点异常" width="700"  />
+</div>
+<div align="center">
+  <img src="images/季节异常.png" alt="季节异常" width="700"  />
 </div>
