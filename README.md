@@ -20,35 +20,38 @@ TFGAN 基于 TimeGAN 的外部框架，并有效捕捉原始数据的复杂时�
 
 TFGAN模型在量化指标及可视化上都优于TimeGAN，可视化对比如下（左侧为TFGAN，右侧为TimeGAN，stock数据集,都基于timeGAN的最优超参数）：
 <div align="center">
-  <img src="images/PCA_stock.png" alt="点异常" width="500"  />
-  <img src="images/PCA_stock0.png" alt="季节异常" width="500"  />
+  <img src="images/PCA_stock.png" alt="PCA_stock" width="500"  />
+  <img src="images/PCA_stock0.png" alt="PCA_stock" width="500"  />
 </div>
 <div align="center">
-  <img src="images/t_SNE_stock.png" alt="点异常" width="500"  />
-  <img src="images/t-SNE_stock0.png" alt="季节异常" width="500"  />
+  <img src="images/t_SNE_stock.png" alt="t_SNE_stock" width="500"  />
+  <img src="images/t-SNE_stock0.png" alt="t_SNE_stock" width="500"  />
 </div>
 
 且由于TFGAN一定程度上平衡了TimeGAN原模型GAN框架内生成器和判别器的性能，避免了模式奔溃，训练过程相对TimeGAN更加稳定（左侧为TFGAN，右侧为TimeGAN）
 <div align="center">
-  <img src="images/TFC_loss1.png" alt="点异常" width="500"  />
-  <img src="images/timeganloss2.png" alt="季节异常" width="500"  />
+  <img src="images/TFC_loss1.png" alt="TFC_loss" width="500"  />
+  <img src="images/timeganloss2.png" alt="timeganloss" width="500"  />
 </div>
 <div align="center">
-  <img src="images/TFC_loss2.png" alt="点异常" width="500"  />
-  <img src="images/timeganloss1.png" alt="季节异常" width="500"  />
+  <img src="images/TFC_loss2.png" alt="TFC_loss" width="500"  />
+  <img src="images/timeganloss1.png" alt="timeganloss" width="500"  />
 </div>
 
 另外，通过额外设计的sine数据集(六维，周期240，每个维度频率随机)，验证了低频处理模块的有效性（seq_len参数设置为24，低频处理模块步长resampled_interval参数设置为10）
 
 没有低频处理模块作用的结果：
 <div align="center">
-  <img src="images/myplot.png" alt="点异常" width="500"  />
-  <img src="images/myplot2.png" alt="季节异常" width="500"  />
+  <img src="images/myplot.png" alt="PCA" width="500"  />
+  <img src="images/myplot2.png" alt="t-SNE" width="500"  />
 </div>
 有低频处理模块作用的结果：
 <div align="center">
-  <img src="images/PCA_20240810_090934.png" alt="点异常" width="500"  />
-  <img src="images/t-SNE_20240810_090938" alt="季节异常" width="500"  />
+  <img src="images/PCA_20240810_090934.png" alt="PCA" width="500"  />
+  <img src="images/t-SNE_20240810_090938.png" alt="t-SNE" width="500"  />
 </div>
+
+原论文地址：
+https://papers.nips.cc/paper/2019/file/c9efe5f26cd17ba6216bbe2a7d26d490-Paper.pdf
 
 
