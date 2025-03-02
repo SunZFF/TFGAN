@@ -5,4 +5,4 @@ TFGAN 基于 TimeGAN 的外部框架，并有效捕捉原始数据的复杂时�
 真实基准数据集上，TFGAN 的表现优于 TimeGAN 及部分现有的先进方法。在基准数据集的定量指标（预测评分和判别评分）上，相较于原始模型，TFGAN 的性能提升了 10.88%；在股票数据集上的性能提升更是达到了 26.43%。
 
 通常只依赖时间域和频域数据的模型会存在点异常和季节异常问题
-
+(https://github.com/SunZFF/TFGAN/blob/master/images/PCA_stock0.png)
