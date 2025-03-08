@@ -47,7 +47,7 @@ if __name__ == '__main__':
     # Args for the main function
     parser = argparse.ArgumentParser()
     # Data parameters
-    parser.add_argument('--data_name', type=str, default='sine', choices=['stock', 'ex_rate', 'etth1', 'sine_long', 'sine'], help='dataset name')
+    parser.add_argument('--data_name', type=str, default='stock', choices=['stock', 'ex_rate', 'etth1', 'sine_long', 'sine'], help='dataset name')
     parser.add_argument('--seq_len', type=int, default=24, help='sequence length')
     # Network parameters (should be optimized for different datasets)
     parser.add_argument('--module', choices=['gru', 'lstm'], default='gru', type=str)
