@@ -51,12 +51,12 @@ if __name__ == '__main__':
     parser.add_argument('--seq_len', type=int, default=24, help='sequence length')
     # Network parameters (should be optimized for different datasets)
     parser.add_argument('--module', choices=['gru', 'lstm'], default='gru', type=str)
-    parser.add_argument('--hidden_dim', type=int, default=6, help='hidden state dimensions')
+    parser.add_argument('--hidden_dim', type=int, default=24, help='hidden state dimensions')
     parser.add_argument('--num_layer', type=int, default=3, help='number of layers')
     # Model training and testing parameters`
     parser.add_argument('--gamma', type=float, default=1, help='gamma weight for G_loss and D_loss')
     parser.add_argument('--lr', type=float, default=0.001, help='initial learning rate for adam')
-    parser.add_argument('--iterations', type=int, default=20000, help='Training iterations')
+    parser.add_argument('--iterations', type=int, default=50000, help='Training iterations')
     parser.add_argument('--print_times', type=int, default=10, help='Print times when Training')
     parser.add_argument('--batch_size', type=int, default=128, help='the number of samples in mini-batch')
     parser.add_argument('--synth_size', type=int, default=0, help='the number of samples in synthetic data, '
