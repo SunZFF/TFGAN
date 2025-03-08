@@ -51,7 +51,7 @@ TFGAN模型在量化指标及可视化上都优于TimeGAN，可视化对比如�
   <img src="images/t-SNE_20240810_090938.png" alt="t-SNE" width="499"  />
 </div>
 
-原论文地址：
+原始模型TimeGAN论文地址：
 https://papers.nips.cc/paper/2019/file/c9efe5f26cd17ba6216bbe2a7d26d490-Paper.pdf
 
 
