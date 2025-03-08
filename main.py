@@ -73,8 +73,6 @@ if __name__ == '__main__':
     #提取长期的趋势信息
     parser.add_argument('--resampled_fft_weight', type=float, default=0.0, help='weight for resampled data after FFT')#重新采样后数据的权重
     parser.add_argument('--resampled_interval', type=int, default=20, help='sampling interval for resampled data')#重新采样的采样间隔
-    #对输出微调
-    #parser.add_argument('--H_hat_weight', type=float, default=1.0, help='weight for Generator output data')
 
     # Call main function
     opt = parser.parse_args()
